@@ -1,0 +1,140 @@
+/* 
+    Created on : 07/05/2017, 19:11:15
+    Author     : marialucrecia 
+*/
+
+*{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+
+    direction: ltr;       
+    }
+}
+.encab{
+    position: fixed;
+    height: 90px;
+    background-image: url(https://cdn.glitch.com/37707b70-e274-4abe-8b1c-1335c17bef0d%2Fbanner.jpg?1497811971152);
+    background-attachment: inherit;
+    background-size: contain;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 30px 0 0 50px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: lightslategrey;
+    top: 90px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: darkslategray;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: red;
+    color: white;
+}
+
+.resultados{
+    color: black;
+    overflow: auto;
+    width: 75%;
+    background-image: url(https://cdn.glitch.com/37707b70-e274-4abe-8b1c-1335c17bef0d%2Ffondo.jpg?1497812014660);
+    background-attachment: fixed;
+    background-size: contain;
+    min-height: 700px;
+    position: absolute;
+    top: 90px;
+    left: 10%;
+    font-size: 1.2em;
+}
+
+.colDer{  /* panel lateral */
+    position: fixed;
+    right: 0;
+    top: 90px;
+    width: 15%;
+    min-height: 550px; 
+    background-color:  #141414;
+    text-align: left;
+    padding-right: 15px;
+    color: white;
+}
+
+[class*="col-"]{
+    padding-top: 2em;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    color: black;
+}
+
+
+.nover{
+    display: none;
+}
+ 
+.comentarios{
+    position: absolute;
+    top: 210px;
+    color: white;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.footer{
+      position: fixed;
+      width:  100%;
+      height: 35px;
+      background-color: black;
+      background-size: cover;
+      padding-top: .5em;
+      color: white;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+}
+#number{
+    width: 100px;
+    float: left;
+    
+}
+#boton{
+    width: 100px;
+    float: left;
+}
+#img20{
+    float: left;
+    background-image: url("../css/quienes.jpg");
+}
+#img21{
+    float: left;
+    background-image: url("../css/mapa.jpg");
+}
