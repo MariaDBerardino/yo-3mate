@@ -20,13 +20,14 @@
 }
 .encab{
     position: fixed;
-    height: 90px;
+    height: 80px;
+    max-width: 100%;
     background-image: url(https://cdn.glitch.com/37707b70-e274-4abe-8b1c-1335c17bef0d%2Fbanner.jpg?1497811971152);
     background-attachment: inherit;
     background-size: contain;
     font-size: 2.5em;
     font-weight: bold;
-    padding: 30px 0 0 50px;
+    padding: 20px 0 10px 50px;
     color: white;
 }
 
@@ -36,7 +37,7 @@ ul {
     padding: 0;
     width: 10%;
     background-color: lightslategrey;
-    top: 90px;
+    top: 80px;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -66,9 +67,9 @@ li a:hover:not(.active) {
     background-image: url(https://cdn.glitch.com/37707b70-e274-4abe-8b1c-1335c17bef0d%2Ffondo.jpg?1497812014660);
     background-attachment: fixed;
     background-size: contain;
-    min-height: 700px;
+    min-height: 560px;
     position: absolute;
-    top: 90px;
+    top: 80px;
     left: 10%;
     font-size: 1.2em;
 }
@@ -76,9 +77,9 @@ li a:hover:not(.active) {
 .colDer{  /* panel lateral */
     position: fixed;
     right: 0;
-    top: 90px;
+    top: 80px;
     width: 15%;
-    min-height: 550px; 
+    min-height: 560px; 
     background-color:  #141414;
     text-align: left;
     padding-right: 15px;
@@ -101,7 +102,7 @@ li a:hover:not(.active) {
     display: none;
 }
  
-.comentarios{
+#comentarios{
     position: absolute;
     top: 210px;
     color: white;
@@ -121,20 +122,20 @@ li a:hover:not(.active) {
       left: 0;
       text-align: center;
 }
-#number{
+.intro{
     width: 100px;
-    float: left;
-    
+    float: right;
 }
-#boton{
+#minumero{
     width: 100px;
-    float: left;
+    float: right;
+    
 }
 #img20{
     float: left;
-    background-image: url("../css/quienes.jpg");
+    background-image: url(https://cdn.glitch.com/37707b70-e274-4abe-8b1c-1335c17bef0d%2Fquienes.jpg?1498319132914);
 }
 #img21{
     float: left;
-    background-image: url("../css/mapa.jpg");
+    background-image: url(https://cdn.glitch.com/37707b70-e274-4abe-8b1c-1335c17bef0d%2Fmapa.jpg?1498319126107);
 }

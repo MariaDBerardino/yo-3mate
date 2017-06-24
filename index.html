@@ -1,62 +1,50 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 
-<html>
-    <head>
-        <title>Series Numéricas</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="public/estilos.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-    </head>
+<!Author  Marilu ---------------------->
 
-    <body >
-        
-        <article id="resul" class="resultados">
-            <h1> usuario consulta matematica </h1>
-        </article> 
-
-        
-    <div class="encab">
-        Ejemplos de las teorías matemáticas
-    </div>
-        
-            <ul >
-              <li>
-                  <a class="active" href="index.html" target="_self">Inicio</a>
-              </li>  
-                           
-              <li>   <a href="#"
-                     onclick =" ASINCRONO.consultar('public/usuarios.html');" >
-                     Usuarios    
-                     </a> 
-              </li> 
-
-              <li>   <a href="#"
-                        onclick =" ASINCRONO.division('public/divisores.html');" >
-                     Divisores     
-                     </a> 
-              </li> 
-              
-              <li><a href="#"
-                     onclick =" ASINCRONO.division('public/textos.html');" >
-                      Conjeturas
-                  </a>
+<html> 
+  <head> 
+    <title>Series Numéricas</title> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="public/estilos.css" rel="stylesheet" /> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
+  </head>  
+  <body >  
+    <article id="resulAJAX" class="resultados"> 
+      <h1> Consultas matematicas de Usuarios </h1> 
+    </article>    
+    <header class="encab"> Ejemplos de las teorías matemáticas </header>  
+    <ul > 
+            <li> <a class="active" href="index.html" target="_self">Inicio</a> 
+            </li>  
+      
+              <li>   <a href="#" onclick =" ASINCRONO.consultar('public/usuarios.html');" > 
+                Usuarios     </a>  
+              </li>
+      
+              <li>   <a href="#" onclick =" ASINCRONO.cargarAJAX('public/divisores.html');" > 
+                Divisores      </a>  
+              </li>   
+      
+              <li><a href="#" onclick =" ASINCRONO.cargarAJAX('public/siracusa.html');" > 
+                Conjeturas </a>
               </li>
               
               <li><a href="#"
-                     onclick =" ASINCRONO.division('public/textos.html');" >
+                     onclick =" ASINCRONO.cargarAJAX('public/contarPrimos.html');" >
                       Contador de primos
                   </a>
               </li>
               
               <li><a href="#"
-                     onclick =" ASINCRONO.division('public/textos.html');" >
+                     onclick =" ASINCRONO.cargarAJAX('public/primosGem.html');" >
                       Primos gemelos
                   </a>
               </li>
               
               <li>  <a href="#"
-                     onclick =" ASINCRONO.division('public/acerca.html');" >
+                     onclick =" ASINCRONO.cargarAJAX('public/acerca.html');" >
                      Acerca de...
                     </a>
               </li>
